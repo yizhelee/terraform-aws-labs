@@ -1,11 +1,11 @@
 variable "aws_region" {
   description = "AWS region on which we will setup the swarm cluster"
-  default = "us-east-1"
+  default = "eu-west-3"
 }
 
 variable "ami" {
   description = "Amazon Linux AMI"
-  default = "ami-4fffc834"
+  default = "ami-4f55e332"
 }
 
 variable "instance_type" {
@@ -15,10 +15,16 @@ variable "instance_type" {
 
 variable "key_path" {
   description = "SSH Public Key path"
-  default = "/home/core/.ssh/id_rsa.pub"
+  default = "/Users/yli/.ssh/id_rsa.pub"
 }
 
 variable "bootstrap_path" {
   description = "Script to install Docker Engine"
   default = "install-docker.sh"
 }
+
+variable "workers_count" {
+  description = "Workers Node counter"
+  default = "0"
+}
+
