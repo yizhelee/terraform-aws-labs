@@ -4,4 +4,17 @@
 
 How to setup a docker swarm cluster in action is shown below:
 
+```
+terraform init
+
+terraform apply  -auto-approve
+
+terraform destroy  -auto-approve
+```
+
+Deploy 2 workers
+```
+TF_VAR_workers_count=2 terraform apply -auto-approve
+```
+
 [![asciicast](https://asciinema.org/a/135278.png)](https://asciinema.org/a/135278)
