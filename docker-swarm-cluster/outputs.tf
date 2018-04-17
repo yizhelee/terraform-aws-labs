@@ -1,5 +1,5 @@
-output "MASTER" {
-  value = "${aws_instance.master.public_ip}"
+output "MASTERS" {
+  value = ["${aws_instance.masters.*.public_ip}"]
 }
 
 output "WORKERS" {

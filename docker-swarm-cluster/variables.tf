@@ -28,3 +28,9 @@ variable "workers_count" {
   default = "0"
 }
 
+variable "masters_count" {
+  description = "Master Node counter"
+  default = "0"
+}
+
+
